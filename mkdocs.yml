@@ -1,1 +1,55 @@
-site_name: My Docs
+site_name: مذكرات
+site_description: موسوعة معرفية شاملة في العلوم والتقنية
+site_url: https://BigHime.github.io/
+site_author: BigHime
+
+theme:
+  name: material
+  language: ar
+  palette:
+    scheme: default
+    primary: deep purple
+    accent: indigo
+  font:
+    text: "Cairo"
+    code: "Fira Code"
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+
+nav:
+  - الصفحة الرئيسية: index.md
+
+plugins:
+  - search:
+      lang: ar
+  - git-revision-date-localized:
+      locale: ar
+      type: timeago
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.arithmatex
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css
